@@ -24,7 +24,6 @@ def sum_divisors(n):
 """The following function takes the modulus(a), reminder (r) and limit(n) and gives number of numbers less than n, whose 
 sum of divisor is a perfect square and which leave reminder r when divided by a."""
 
-perfect squares and leave a reminder 
 def main_function(a, r, n):
     data_list = (sum_divisors(n))
     count = 0
