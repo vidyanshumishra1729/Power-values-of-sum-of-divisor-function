@@ -4,7 +4,7 @@ def sum_divisors(n):
     """Returns a list containing the sum of divisors (including proper divisors) of all the numbers below n. 
 
     >>> sum_divisors(10) # https://oeis.org/A000203
-    [0, 1, 3, 4, 7, 6, 12, 8, 15, 13]
+    [0, 1, 3, 4, 7, 6, 12, 8, 15, 13] -- The list contain the sum of divisors of all the numbers from 0 to 9
 
     """
     result = [1] * n
@@ -34,4 +34,4 @@ def main_function(a, r, n):
         serial = serial + 1
     return count
 
-
+print(main_function(5, 1, 1001))
