@@ -1,6 +1,6 @@
 # Power-values-of-sum-of-divisor-function-in-arithmetic-progressions
 
-This repository contains my paper with Sai Teja Somu on powerv values of some of divisor functions. 
+This repository contains my paper with Sai Teja Somu on power values of some of divisor functions and corresponding code. 
 
 Power-values-of-sum-of-divisor-function-in-arithmetic-progression.pdf - Original Paper
 
