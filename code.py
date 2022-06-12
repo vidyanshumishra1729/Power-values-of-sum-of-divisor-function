@@ -21,9 +21,9 @@ def sum_divisors(n):
                 p_power *= p
     return result
 
-"""The following function takes the modulus(a), reminder(r) and limit(x) and gives # of numbers less than n, whose 
+"""The following function takes the modulus(a), reminder(r) and limit(x) and gives # of numbers less than x, whose 
 sum of divisor is a perfect square and which leave reminder r when divided by a. The function is important for compairing the 
-residue classes modulo n as given in table 1 of the paper.""" 
+residue classes modulo a as given in table 1 of the paper.""" 
 
 def main_function(a, r, x):
     data_list = (sum_divisors(x))
@@ -34,5 +34,3 @@ def main_function(a, r, x):
             count = count + 1
         serial = serial + 1
     return count
-
-print(main_function(5, 1, 1001))
