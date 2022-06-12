@@ -3,7 +3,7 @@ import math
 def sum_divisors(n):
     """Returns a list containing the sum of divisors (including proper divisors) of all the numbers below n. 
 
-    >>> sum_divisors(10) # https://oeis.org/A000203
+    sum_divisors(10) # https://oeis.org/A000203
     [0, 1, 3, 4, 7, 6, 12, 8, 15, 13] -- The list contain the sum of divisors of all the numbers from 0 to 9
 
     """
@@ -15,17 +15,18 @@ def sum_divisors(n):
             while p_power < n:
                 m = last_m + p_power
                 for i in range(p_power, n, p_power):
-                    result[i] //= last_m    # (B)
-                    result[i] *= m          # (B)
+                    result[i] //= last_m    
+                    result[i] *= m        
                 last_m = m
                 p_power *= p
     return result
 
-"""The following function takes the modulus(a), reminder (r) and limit(n) and gives number of numbers less than n, whose 
-sum of divisor is a perfect square and which leave reminder r when divided by a."""
+"""The following function takes the modulus(a), reminder(r) and limit(x) and gives # of numbers less than n, whose 
+sum of divisor is a perfect square and which leave reminder r when divided by a. The function is important for compairing the 
+residue classes modulo n as given in table 1 of the paper.""" 
 
-def main_function(a, r, n):
-    data_list = (sum_divisors(n))
+def main_function(a, r, x):
+    data_list = (sum_divisors(x))
     count = 0
     serial = 0
     for i in data_list:
